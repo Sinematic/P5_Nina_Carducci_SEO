@@ -15,7 +15,7 @@ Il est possible de faire plusieurs modifications qui aideront le site autant sur
 - Ajouter du texte alternatif à toutes les images du site web (y compris à l'icône d'Instagram)
 - Corriger les erreurs des balises `<img>`
 - Corriger les erreurs de la balise `<form>`
-- Utiliser du HTML sémantique
+- Utiliser du HTML sémantique (HTML landmarks)
 - Ajouter la langue au site 
 - Modifier certains guillemets `’` et les remplacer par des guillemets traditionnels
 - Corriger les différents labels du formulaire de contact
@@ -64,3 +64,12 @@ Il y a encore beaucoup de choses à faire afin de rendre l'ensemble plus appropr
 - Remplacer éventuellement l'image d'Instagram par du texte
 - Remplacer le texte alternatif existant par du contenu pertinent
 - Utiliser des termes compréhensibles dans les liens
+
+À vérifier : 
+- Adopter un ordre logique de tab
+- Pouvoir utiliser le clavier pour les éléments interactifs
+- Les éléments interactifs indiquent leur fonction
+- Le focus de l'utilisateur est renvoyé directement vers le nouveau contenu ajouté à la page
+- Le focus ne peut se retrouver bloqué dans une section de la page
+- Proprement cacher des technologies d'assistance les éléments en dehors du flux
+- Les éléments de contrôle interactifs ont des rôles ARIA
