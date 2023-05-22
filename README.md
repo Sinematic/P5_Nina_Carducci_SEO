@@ -5,7 +5,7 @@
 Voici le rapport d'incident du site : [Nina Carducci](https://nina-carducci.github.io/) dans le but de le débugger puis de l'optimiser pour le référencement naturel ainsi que son accessibilité Web selon les critères du WCAG.
 
 
-## Corrections
+## Débug et corrections
 
 ### Le HTML
 
@@ -33,15 +33,9 @@ Il existe des modifications à effectuer également concernant le CSS :
 - Corriger l'erreur dans le fichier CSS
 
 
-## L'accessibilité
+### Le JavaScript
 
-Il y a encore beaucoup de choses à faire afin de rendre l'ensemble plus approprié aux utilisateurs handicapés :
-
-- Indiquer où se situe le contenu principal (`<main>`) et permettre aux utilisateurs d'accéder directement au contenu principal sans avoir à parcourir les éléments répétitifs
-- Ajuster les contrastes de couleurs entre la couleur de fond du bouton de filtre dans le portfolio
-- Régler le problème de sauts de niveau dans le `<hgroup>`
-- Remplacer éventuellement l'image d'Instagram par du texte
-- Remplacer le texte alternatif existant par du contenu pertinent
+- Corriger le bug dans la modale
 
 
 ## Performances 
@@ -52,8 +46,21 @@ Il y a encore beaucoup de choses à faire afin de rendre l'ensemble plus appropr
 - Supprimer le code JavaScript inutilisé
 - Définir explicitement une largeur et une hauteur aux images
 - Réduire l'impact des services tiers
+- Utiliser l'attribut `defer` pour les fichiers JavaScript non-prioritaires qui bloquent le chargement du Paint
 
-
-## Référencement
+## Référencement & Bonnes pratiques
 
 - Renommer les photos avec des noms plus explicites qui sauront donner des informations au crawler de Google
+- Remplacer l'évènement `unload` par un changement de visibilité ou un pagehide
+
+
+## Accessibilité
+
+Il y a encore beaucoup de choses à faire afin de rendre l'ensemble plus approprié aux utilisateurs handicapés :
+
+- Indiquer où se situe le contenu principal (`<main>`) et permettre aux utilisateurs d'accéder directement au contenu principal sans avoir à parcourir les éléments répétitifs
+- Ajuster les contrastes de couleurs entre la couleur de fond du bouton de filtre dans le portfolio
+- Régler le problème de sauts de niveau dans le `<hgroup>`
+- Remplacer éventuellement l'image d'Instagram par du texte
+- Remplacer le texte alternatif existant par du contenu pertinent
+- Utiliser des termes compréhensibles dans les liens

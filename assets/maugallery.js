@@ -1,8 +1,11 @@
 (function($) {
   $.fn.mauGallery = function(options) {
+
     var options = $.extend($.fn.mauGallery.defaults, options);
     var tagsCollection = [];
+
     return this.each(function() {
+
       $.fn.mauGallery.methods.createRowWrapper($(this));
       if (options.lightBox) {
         $.fn.mauGallery.methods.createLightBox(
@@ -11,11 +14,13 @@
           options.navigation
         );
       }
+
       $.fn.mauGallery.listeners(options);
 
       $(this)
         .children(".gallery-item")
         .each(function(index) {
+			
           $.fn.mauGallery.methods.responsiveImageItem($(this));
           $.fn.mauGallery.methods.moveItemInRowWrapper($(this));
           $.fn.mauGallery.methods.wrapItemInColumn($(this), options.columns);
