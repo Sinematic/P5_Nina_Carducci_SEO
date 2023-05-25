@@ -18,27 +18,27 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+h1 {
 	font-size: 26px;
 }
 
-.nav ul {
+.navbar ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+.navbar li {
 	padding-inline: 10px;
 }
 
-.nav a {
+.navbar a {
 	text-decoration: none;
-	color: #000
+	color: #000000;
 }
 
-.social-link img {
+.instagram-logo img {
 	width: 20px;
 }
 
@@ -93,17 +93,10 @@ body {
 	text-align: center;
 	padding-block: 2em;
 }
-.gallery .nav {
+.gallery .navbar {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
-	border-radius:0 ;
-}
-.nav-pills .nav-link {
-	color: #000
-}
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
@@ -215,6 +208,7 @@ body {
 	flex : 2;
 
 }
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -324,11 +318,11 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	.navbar, .navbar ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	.top-header .navbar li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
@@ -353,3 +347,4 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+
