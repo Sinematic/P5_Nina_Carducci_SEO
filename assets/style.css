@@ -98,7 +98,7 @@ main h2 {
 	text-align: center;
 	padding-block: 2em;
 }
-.gallery .navbar {
+.gallery .nav {
 	justify-content: center;
 }
 
@@ -123,6 +123,15 @@ main h2 {
 	aspect-ratio: 440 / 440;
 	object-fit: cover;
 	padding: .5em;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #BEB45A;
+	border-radius:0 ;
+}
+.nav-pills .nav-link {
+	color: #000
 }
 .mg-prev, .mg-next {
 	width: 30px;
